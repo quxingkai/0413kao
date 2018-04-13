@@ -70,6 +70,7 @@ nav span i.icon{
     margin:0 5px;
 }
 section{
+    overflow: hidden;
     flex:1;
     width:100%;
 }

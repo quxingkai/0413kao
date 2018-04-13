@@ -1,0 +1,134 @@
+*{
+    padding:0;
+    margin:0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+html,body,.wrap{
+    width:100%;
+    height:100%;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    width:100%;
+    height:40px;
+    overflow: hidden;
+}
+header ul{
+    width:150%;
+    height:40px;
+}
+header ul li{
+    line-height: 40px;
+    text-align: center;
+    float: left;
+    width:16%;
+    position: relative;
+}
+header ul li.bg::after{
+    content: "";
+    position: absolute;
+    height:3px;
+    width:50%;
+    left:50%;
+    bottom: 3px;
+    transform:translateX(-50%);
+    background: orange;
+}
+header ul li.bg{
+    color:orange;
+}
+nav{
+    overflow: hidden;
+    padding:0 5%;
+    width:100%;
+    height:40px;
+    display:flex;
+}
+nav label{
+    position: relative;
+    flex:1;
+}
+nav label input{
+    text-align: center;
+    width:100%;
+    height:30px;
+}
+nav label i.icon{
+    position: absolute;
+    left:50%;
+    top:6px;
+    margin-left:-50px;
+}
+nav span i.icon{
+    font-size:24px;
+    margin:0 5px;
+}
+section{
+    flex:1;
+    width:100%;
+}
+.allpage,.pages{
+    width:100%;
+    height:100%;
+}
+.page1 .banner{
+    width:100%;
+}
+.page1 .banner img{
+    width:100%;
+}
+.tit{
+    width:100%;
+    height:60px;
+    padding-top:30px;
+    padding-left:5%;
+    font-size: 16px;
+}
+.list{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.list li {
+    width:50%;
+}
+.list li h4{
+    font-weight: 400;
+}
+.list li p{
+    font-size: 12px;
+}
+.list img{
+    width:95%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+footer{
+    width:100%;
+    height:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 5%;
+}
+footer dl{
+    flex:1;
+}
+footer dl.bg{
+    color:#EC792F;
+}
+footer dl dt i.icon{
+    font-size: 26px;
+}
+footer dl dt,footer dl dd{
+    width:100%;
+    text-align: center;
+}
